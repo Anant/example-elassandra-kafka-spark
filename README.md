@@ -5,7 +5,7 @@ Make sure you are in the root folder of the repository. Run the following comman
 ```bash
 docker-compose up
 ```
-After a minute or two, run the following command to make sure that both containers are up (both elasticsearch and dse server): 
+After a minute or two, run the following command to make sure that the containers are up: 
 ```bash
 docker ps -a
 ```
@@ -17,21 +17,21 @@ npm install
 
 ## 3. Create the topic
 ```bash
-docker exec -it kafka /opt/bitnami/kafka/bin/kafka-topics.sh \
-    --create \
-    --zookeeper zookeeper:2181 \
-    --replication-factor 1 \
-    --partitions 1 \
-    --topic nametest
+docker exec -it kafka /opt/bitnami/kafka/bin/kafka-topics.sh \
+    --create \
+    --zookeeper zookeeper:2181 \
+    --replication-factor 1 \
+    --partitions 1 \
+    --topic elassandra
 ```
-## 3. Run the Consumer and Producer
+## 4. Run the Consumer and Producer
 ```bash
 npm run start:consumer
 ```
 ```bash
 npm run start:producer
 ```
-## 3. Check the cassandra for new files
+## 5. Check the cassandra for new files
 ```bash
-docker exec -it project_elassandra_1 cqlsh
+docker exec -it example-elassandra-kafka-spark_elassandra_1 cqlsh
 ```

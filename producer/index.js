@@ -27,7 +27,7 @@ const stream = Kafka.Producer.createWriteStream({
 });
 
 function apiCall() {
-    const api = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=javascript&key=AIzaSyDtLUZS1tgAGfV-u-_03JUl5zvja-7GqQI&maxResults=50&order=viewCount`
+    const api = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=java&key=AIzaSyDtLUZS1tgAGfV-u-_03JUl5zvja-7GqQI&maxResults=50&order=viewCount`
         fetch(`${api}`).then(
             res => {
                 return res.json()
