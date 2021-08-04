@@ -42,7 +42,7 @@ npm run start:consumer
 ```bash
 npm run start:producer
 ```
-## 5. Check the cassandra for new files
+## 5. Check Cassandra for new data
 ```bash
 docker exec -it example-elassandra-kafka-spark_elassandra_1 cqlsh
 ```
