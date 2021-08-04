@@ -1,4 +1,15 @@
 # Example Elassandra-Kafka-Spark
+This project is ment to demonstrate working with Elassandra,Kafka and Spark
+
+## Software involved
+- docker (docker-compose)
+- Elassandra
+- Node
+
+## Requirements
+- docker, docker-compose
+- node
+- npm
 
 ## 1. Run Docker Containers
 Make sure you are in the root folder of the repository. Run the following command: 
